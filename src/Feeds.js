@@ -7,7 +7,7 @@ class Feeds extends React.Component {
   };
 
   async componentDidMount() {
-    const resp = await fetch("https://theaudiodb.p.rapidapi.com/searchalbum.php");
+    const resp = await fetch("https://picsum.photos/200");
     const feeds = await resp.json();
     this.setState({ feeds });
   }
