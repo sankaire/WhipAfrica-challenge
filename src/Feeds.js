@@ -7,7 +7,7 @@ class Feeds extends React.Component {
   };
 
   async componentDidMount() {
-    const resp = await fetch("https://picsum.photos/200");
+    const resp = await fetch("https://picsum.photos/v2/list");
     const feeds = await resp.json();
     this.setState({ feeds });
   }
